@@ -63,9 +63,7 @@ keys to input box. It also requires validating the given labels and placeholders
     System.out.println(messageInputBox1.getAttribute("placeholder").equals("Message*")? "Message validation is passed": "Message validation is failed");
     messageInputBox.sendKeys("love this website");
 
-
-
-  driver.quit();
+    driver.quit();
 
 
   }
