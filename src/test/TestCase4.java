@@ -57,10 +57,8 @@ keys to input box. It also requires validating the given labels and placeholders
     emailInputBox.sendKeys("Nataliiagrynda@gmail.com");
 
     WebElement messageInputBox = driver.findElement(By.xpath("//textarea[@data-aid='CONTACT_FORM_MESSAGE']"));
-    if(messageInputBox.isDisplayed()) System.out.println("The message input box validation is Passed");
-    else System.out.println("The message input box validation is Failed");
     WebElement messageInputBox1 = driver.findElement(By.xpath("//textarea[@role='textbox']"));
-    System.out.println(messageInputBox1.getAttribute("placeholder").equals("Message*")? "Message validation is passed": "Message validation is failed");
+    System.out.println(messageInputBox1.isDisplayed() && messageInputBox1.getAttribute("placeholder").equals("Message*")? "Message validation is passed": "Message validation is failed");
     messageInputBox.sendKeys("love this website");
 
     driver.quit();

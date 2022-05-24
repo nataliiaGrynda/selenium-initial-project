@@ -34,7 +34,7 @@ travel, office and home.” */
     WebElement comfyEliteLogo = driver.findElement(By.id("n-48560"));// if the logo is displayed
     System.out.println(comfyEliteLogo.isDisplayed() ? "True" : "False");
 
-    WebElement heading2Logo = driver.findElement(By.xpath("//h2[@id='dynamic-tagline-48605']"));//if second logo is displayed
+    WebElement heading2Logo = driver.findElement(By.id("dynamic-tagline-48605"));//if second logo is displayed
 
    if(heading2Logo.isDisplayed()) System.out.println("The heading2 logo test PASSED");
   else System.out.println("The heading2 logo test FAILED");

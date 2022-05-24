@@ -19,7 +19,6 @@ And user should be able to see “Facebook” icon and hyperlink reference for i
 And user should be able to see “Instagram” icon and hyperlink reference for it should be
 “https://www.instagram.com/comfyelite”
      */
-
     WebDriver driver = Driver.getDriver();
     driver.get("https://comfyelite.com/");
 
